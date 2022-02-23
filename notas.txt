@@ -1,0 +1,209 @@
+.wrapper {
+    border-radius: 10px;
+    width: 25%;
+    background-color:#7297A6;
+    padding: 3rem;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    
+    box-shadow: 0 0 10px;
+    
+    
+    
+}
+
+
+
+
+<img class="fisioimg" src="images/calculator-spec.png" height="250px" width="300px" alt="">
+<img class="fisioimg" src="images/memoryjs.PNG" height="250px" width="300px" alt="">
+
+
+  <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+  <script type="text/babel" src="like_button.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+   <script src="index.js"></script>
+   <script>ReactDOM.render(<LikeButton />, domContainer);</script>
+
+   <link href="/dist/output.css" rel="stylesheet">
+
+
+
+
+   ----------------------
+   <nav class="portfolio_navbar" id="navbar" >
+              <a href=""><img  class="logo_navbar"src="images/logo9.svg" alt="" height="90px" width="100%"></a>
+                 <a class="svg" href="" onclick="mobileMenu()"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" >
+                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" height="50px" />
+                 </svg></a>
+                     <a href=".projects">Projects</a>
+                     <a href=".skills">Skills</a>
+                     <a href="">About me</a>
+          </nav>
+
+          .portfolio_navbar {
+    z-index: 999;
+    background-color: whitesmoke;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    
+    border-radius:8px;
+    box-shadow: 0 0 10px;
+    opacity: 0.8;
+    
+    
+    
+}
+
+.portfolio_navbar a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    
+}
+
+svg {
+
+    height: 50px;
+    width: 100%;
+}
+
+
+.portfolio_navbar img {
+    
+    width:200px;
+    height: 90px;
+    padding:5px;
+    
+   
+    
+}
+
+
+
+
+
+.portfolio_navbar .svg {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .portfolio_navbar a:not(:first-child) {
+        display: none;
+
+    }
+    
+        
+    
+    .portfolio_navbar a.svg {
+        display: block;
+        height: 50px;
+        float: right;
+    }
+}
+
+@media screen and (max-width: 600px) {
+.portfolio_navbar .mobile {
+    position: relative;
+}
+.portfolio_navbar .mobile a.svg {
+position: absolute;
+right: 0;
+left: 0;
+}
+.portfolio_navbar .mobile a {
+    float: none;
+    display: block;
+    text-align: center;
+    z-index: 99999;
+}
+
+
+
+    
+}
+
+.portfolio_navbar h1{
+        width: 100%;
+        white-space: nowrap;
+        
+    }
+    ----------------------------------
+     /* Add a black background color to the top navigation */
+ .topnav {
+    background-color: whitesmoke;
+    overflow: hidden;
+    border-radius: 8px;
+    
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .topnav a:not(:first-child) {
+      display: flex;
+  }
+
+  
+  @media screen and (max-width: 600px) {
+      .logo_navbar{
+
+      }
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add an active class to highlight the current page */
+  .topnav a.active {
+    background-color: whitesmoke;
+    color: white;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  } 
+  
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+ @media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+    margin: 30px;
+  }
+ }
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin:30px;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    margin: 30px;
+  }
+} 
