@@ -18,7 +18,7 @@ body {
 
 
 .header_image{
-    background-image: url("assets/images/mountaingreen.jpg");
+    background-image: url("/mountaingreen.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     height: 100vh;
