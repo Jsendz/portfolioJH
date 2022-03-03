@@ -30,7 +30,7 @@ body {
 
 @media only screen and (max-width:1280px) {
     .header_image {
-    background-image: url("src/assets/images/mountaingreen2.jpg");
+    background-image: url("assets/images/mountaingreen2.jpg");
     background-repeat: no-repeat;
     height: 100vh;
     width: 100%;
@@ -42,7 +42,7 @@ body {
 
 @media only screen and (max-width:500px) {
     .header_image {
-        background-image: url("src/assets/images/mountaingreen3.jpg");
+        background-image: url("assets/images/mountaingreen3.jpg");
         background-repeat: no-repeat;
         height: 450px;
         width: 100%;
