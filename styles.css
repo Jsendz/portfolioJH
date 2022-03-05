@@ -470,6 +470,11 @@ footer {
     background-color:#023047 ;
     color: lightgrey;
 }
+@media screen and (max-width:600px) {
+    footer {
+        height: 100%;
+    }
+}
 
 .footer {
     
@@ -477,6 +482,12 @@ footer {
     justify-content: space-around;
     align-items: center;
     height: 100%;
+}
+@media screen and (max-width:600px) {
+     .footer {
+         flex-direction: column;
+     }
+    
 }
 
 .footer h1 {
