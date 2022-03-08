@@ -18,7 +18,7 @@ body {
 
 
 .header_image{
-    background-image: url("/public/images/mountaingreen.jpg");
+    background-image: url("/public/images/mountaingreen.avif");
     background-attachment: fixed;
     background-repeat: no-repeat;
     height: 100vh;
@@ -30,7 +30,7 @@ body {
 
 @media only screen and (max-width:1280px) {
     .header_image {
-    background-image: url("/public/images/mountaingreen2.jpg");
+    background-image: url("/public/images/mountaingreen2.avif");
     background-repeat: no-repeat;
     height: 100vh;
     width: 100%;
@@ -42,11 +42,11 @@ body {
 
 @media only screen and (max-width:500px) {
     .header_image {
-        background-image: url("/public/images/mountaingreen3.jpg");
+        background-image: url("/public/images/mountaingreen6.avif");
         background-repeat: no-repeat;
         height: 450px;
         width: 100%;
-        opacity: 0.8;
+        background-size: 100%;
         
         
     }
@@ -63,14 +63,17 @@ body {
     font-size: 3.5rem;
     color: rgb(61, 61, 61);
     text-align: center;
-    padding-top: 100px;
+    position: absolute;
+    right: 30vh;
+    top: 40vh;
+
     text-shadow: 2px 2px 4px grey;
-    z-index: 99;
+    
 
 }
 
 .nav_container {
-    padding: 5px;
+    
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.85), transparent);
 }
 
@@ -79,7 +82,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-radius: 8px;
+    position: fixed;
+    width: 100%;
+    z-index: 99999;
     height: 100px;
 }
 
@@ -151,16 +156,16 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
   }
   
   .mobile-menu {
     display: none;
     position: absolute;
-    top: 96px;
-    left: 0;
+    top: 107px;
+    left: 10px;
     height: 200px;
-    width: 100%;
+    width: 95%;
     border-radius: 8px;
     background-color: whitesmoke;
   }
@@ -190,6 +195,8 @@ body {
     .header_overlay{
         font-size: 2.5rem;
         color: lightgrey;
+        top: 30vh;
+        right: 0;
     }
     
     
@@ -215,15 +222,18 @@ body {
 
 
 .skills {
-    background-color:rgb(245, 245, 245);
+    background-color:#001E2B;
     
     padding: 50px 20px 50px 20px;
     display: flex;
     justify-content: space-around;
+    height: 100%;
 
     
     
 }
+
+
 
 .skills article {
     background-color: white;
@@ -233,6 +243,7 @@ body {
     
     border-radius: 8px;
     box-shadow: 0 0 8px;
+    
     
     
 } 
@@ -269,6 +280,7 @@ body {
     .skills {
         flex-direction: column;
         justify-content: space-between;
+        height: 900px;
         
     }
     .skills h3 {
@@ -282,6 +294,8 @@ body {
         font-size: 0.85rem;
 
     }
+    
+        
 
 }
 
@@ -315,8 +329,12 @@ body {
 @media screen and (max-width :800px) {
     .projects article {
         flex-direction: column;
-        align-items: space-between;
+        align-content: space-around;
+        height: 700px;
 
+    }
+    .projects h3 {
+        padding: 20px;
     }
     
 }
@@ -459,6 +477,91 @@ body {
 }
 
 
+.about-me h1 {
+    text-align: center;
+    padding: 50px;
+    font-size: 2.5rem;
+    font-family: henriette,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+
+
+}
+
+.about-me-wrapper {
+    display: flex;
+    padding: 20px;
+    height: 100%;
+    width: 90%;
+    margin: auto;
+    
+
+
+}
+
+
+
+.about-me-wrapper article img {
+   width:100%;
+   object-fit: cover;
+   border-radius: 10px; 
+   height: 300px;
+   
+}
+
+.about-me-image {
+    z-index: 9999;
+    margin-top: 0;
+    margin-left: 100px;
+    height: 300px;
+    box-shadow: 0 0 8px;
+    border-radius: 10px;
+  }
+
+.about-me-text {
+    width: 70%;
+    height: 500px;
+    padding-left: 200px;
+    padding-top: 100px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 15px;
+    text-align: left;
+    margin-top: 100px;
+    margin-left: -180px;
+    background-color:darkgray;
+    box-shadow: 0 0 8px;
+
+}
+
+
+@media screen and (max-width:600px){
+    .about-me-wrapper {
+        flex-direction: column;
+    }
+
+    .about-me-image {
+        width: 100%;
+
+        margin: auto;
+    }
+    .about-me-text {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+        
+    }
+    .about-me-wrapper article img {
+        width: 100%;
+        height: 100%;
+    }
+}
+    
+
+
+
 
 /*End Main*/
 
@@ -481,11 +584,14 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    text-align: center;
     height: 100%;
 }
 @media screen and (max-width:600px) {
      .footer {
          flex-direction: column;
+         align-content: space-around;
+        
      }
     
 }
