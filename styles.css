@@ -42,11 +42,11 @@ body {
 
 @media only screen and (max-width:500px) {
     .header_image {
-        background-image: url("/public/images/mountaingreen6.avif");
+        background-image: url("/public/images/mobilebcggreen2.jpg");
         background-repeat: no-repeat;
-        height: 450px;
+        height: 600px;
         width: 100%;
-        background-size: 100%;
+        background-size:contain;
         
         
     }
