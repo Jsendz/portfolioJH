@@ -221,12 +221,27 @@
     
 <footer>
     <article class="footer">
-        <div class="email">
+        <div class="container">
+            <form action="POST">
+          
+              <label for="name">Name</label>
+              <input type="text" id="fname" name="name" placeholder="Your name..">
+          
+              <label for="email">Email</label>
+              <input type="text" id="email" name="email" placeholder="Your email..">
+          
+              
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
+          
+              <input type="submit" value="Submit">
+          
+            </form>
+          </div> 
+            
 
-            <h1>Request</h1>
-            <hr>
-            <input type="email"><button>Request</button>
-        </div>
+            
+        
         <div class="redes">
             <h1>Let's Connect!</h1>
             <i class="fa fa-instagram" aria-hidden="true"></i>
